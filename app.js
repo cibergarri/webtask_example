@@ -1,3 +1,8 @@
+var app = new (require('express'))();
+app.get('/', (req, res) => res.send('Hello World'));
+module.exports = app;
+
+/*
 var express = require('express');
 var Webtask = require('webtask-tools');
 var app = express();
